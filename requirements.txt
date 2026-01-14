@@ -1,17 +1,29 @@
-numpy==1.24.3
+# Core scientific stack
+numpy>=1.24.3,<2.0.0
 pandas==2.0.3
 scikit-learn==1.3.0
+scipy>=1.10.0,<2.0.0
+
+# Gradient boosting / tree models
 xgboost==2.0.0
 lightgbm==4.0.0
+
+# Deep learning
 tensorflow==2.14.0
 keras==2.14.0
+
+# Utilities
 joblib==1.3.0
+
+# Plotting (optional but used in your scripts)
 matplotlib==3.7.2
 seaborn==0.12.2
-pyyaml==6.0
+
+# API
 flask==2.3.0
 flask-cors==4.0.0
-flask-restx==0.6.0
-pydantic==2.0.0
-requests==2.31.0
+
+# Infra / deployment helpers
+gunicorn==21.2.0
 python-dotenv==1.0.0
+requests==2.31.0
